@@ -60,8 +60,11 @@ window.onload = () => {
                 }
             }
 
-            op.querySelector('.execute').click();
-            op.scrollIntoView();
+            setTimeout(function(){
+                //do what you need here
+                op.querySelector('.execute').click();
+                op.scrollIntoView();
+            }, 1000);
         });
 
         tryOutObserver.observe(document, {childList: true, subtree: true});
